@@ -5,15 +5,15 @@
     <title>Markdown Editor</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="lib/material-icons.css">
-    <link rel="stylesheet" href="lib/base16-light.css">
     <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-    <link rel="stylesheet" href="lib/default.css">
+    <link rel="stylesheet" href="lib/cm-material-darker.css">
+    <link rel="stylesheet" href="lib/highlightjs/extras/styles/atom-one-dark.css">
     <link rel="stylesheet" href="lib/github-markdown.css">
     <link rel="stylesheet" href="lib/spell-checker.min.css">
     <link rel="stylesheet" href="lib/sweetalert.css">
     <link rel="stylesheet" href="index.css">
   </head>
-  <body id="toplevel">
+  <body id="toplevel" class="no-spellcheck">
     <div id="in"><form><textarea id="code"># New Document</textarea></form></div>
     <div id="out" class="markdown-body"></div>
     <div id="menu">
@@ -48,29 +48,28 @@
         <p id="sharebutton" title="Generate Shareable Link" class="navbutton left" onclick="updateHash()"><i class="material-icons">share</i></p>
         <p id="nightbutton" title="Night Mode" class="navbutton left" onclick="toggleNightMode(this)"><i class="material-icons">invert_colors</i></p>
         <p id="readbutton" title="Reading Mode" class="navbutton left" onclick="toggleReadMode(this)"><i class="material-icons">chrome_reader_mode</i></p>
-        <p id="spellbutton" title="Spell Check" class="navbutton left selected" onclick="toggleSpellCheck(this)"><i class="material-icons">spellcheck</i></p>
+        <p id="spellbutton" title="Spell Check" class="navbutton left" onclick="toggleSpellCheck(this)"><i class="material-icons">spellcheck</i></p>
         <p id="newbutton" class="navbutton left hidden" onclick="clearEditor()">Clear</p>
         <p id="sharebutton" class="navbutton left selected hidden">Share</p>
       </div>
     </div>
     <script src="lib/markdown-it.js"></script>
     <script src="lib/markdown-it-footnote.js"></script>
-    <script src="lib/highlight.pack.js"></script>
+    <script src="lib/highlightjs/extras/highlight.pack.js"></script>
     <script src="lib/emojify.js"></script>
     <script src="codemirror/lib/codemirror.js"></script>
     <script src="codemirror/overlay.js"></script>
     <script src="codemirror/xml/xml.js"></script>
     <script src="codemirror/markdown/markdown.js"></script>
-    <script src="codemirror/gfm/gfm.js"></script>
+    <script src="lib/codemirror/languages/gfm/gfm.js"></script>
     <script src="codemirror/javascript/javascript.js"></script>
-    <script src="codemirror/typescript.js"></script>
     <script src="codemirror/css/css.js"></script>
     <script src="codemirror/htmlmixed/htmlmixed.js"></script>
     <script src="codemirror/lib/util/continuelist.js"></script>
     <script src="lib/spell-checker.min.js"></script>
     <script src="lib/rawinflate.js"></script>
     <script src="lib/rawdeflate.js"></script>
-    <script src = "lib/sweetalert.min.js"></script>
+    <script src="lib/sweetalert.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

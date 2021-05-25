@@ -107,12 +107,16 @@ CodeMirrorSpellChecker({
 });
 
 var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-    mode: "spell-checker",
-    backdrop: "gfm",
+    mode: {
+        name: "gfm",
+        tokenTypeOverrides: {
+            emoji: "emoji"
+        }
+    },
     lineNumbers: false,
     matchBrackets: true,
     lineWrapping: true,
-    theme: 'base16-light',
+    theme: 'material-darker',
     extraKeys: {
         "Enter": "newlineAndIndentContinueMarkdownList"
     }
