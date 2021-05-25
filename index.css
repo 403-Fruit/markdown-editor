@@ -1,6 +1,6 @@
  body {
-     margin: 0;
-     background-color: white;
+    margin: 0;
+    background-color: #22272e;
  }
 
  .CodeMirror pre {
@@ -43,8 +43,13 @@
      overflow: auto;
      padding: 10px;
      padding-left: 20px;
-     background-color: white;
      border-left: 2px solid #444;
+
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #adbac7;
+    background-color: #22272e;
  }
 
  #menu {
@@ -129,27 +134,27 @@
  }
 
  .cm-header-1 {
-     font-size: 2em;
+     font-size: 1.16em;
  }
 
  .cm-header-2 {
-     font-size: 1.75em;
+     font-size: 1.12em;
  }
 
  .cm-header-3 {
-     font-size: 1.5em;
+     font-size: 1.08em;
  }
 
  .cm-header-4 {
-     font-size: 1.3em;
+     font-size: 1.04em;
  }
 
  .cm-header-5 {
-     font-size: 1.2em;
+     font-size: 1.02em;
  }
 
  .cm-header-6 {
-     font-size: 1.15em;
+     font-size: 1em;
  }
 
  .cm-quote {
@@ -264,25 +269,8 @@
       }
  }
 
-body{
+body {
      background-color: rgb(40, 40, 40);
- }
-
- .nightmode #in {
-     filter: invert(100%);
- }
-
- .nightmode #out {
-     filter: invert(100%);
- }
-
- .nightmode #navbar {
-     filter: invert(0%);
- }
-
- .nightmode img {
-    filter: invert(100%);
-    background: black; /* to deal with inverting transparent images */
  }
 
  .no-spellcheck .cm-spell-error {
@@ -309,3 +297,52 @@ body{
      }
  }
 
+
+.markdown-body, #out {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #adbac7;
+    background-color: #22272e;
+}
+
+.markdown-body a {
+    color: #539bf5;
+    text-decoration: none;
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #2d333b;
+    border-radius: 6px;
+}
+
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: #768390;
+    border-left: .25em solid #4f5964;
+}
+
+.markdown-body h1, .markdown-body h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid #373e47;
+}
+
+.markdown-body code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+}
+
+
+textarea .cm-s-material-darker.CodeMirror {
+	background-color: inherit;
+	color: #EEFFFF;
+}
