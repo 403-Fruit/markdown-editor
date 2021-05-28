@@ -462,11 +462,13 @@
     border: 1px solid #3a424a;
 }
 .markdown-body table tr {
-    background-color: #22272e;
+    /* background-color: #22272e; */
+    background-color: hsl(215deg 15% 12%);
     border-top: 1px solid #3a424a;
 }
 .markdown-body table tr:nth-child(2n) {
-  background-color: #2d333b;
+  /* background-color: #2d333b; */
+  background-color: hsl(214deg 13% 16%);
 }
 .markdown-body table img {
     background-color: initial
